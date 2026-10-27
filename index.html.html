@@ -1,0 +1,89 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Exponent Lockdown</title><style>
+:root{--bg:#10142b;--panel:#202846;--ink:#f8f5ff;--muted:#c3c8e1;--pink:#ff79bc;--mint:#75ebcd;--gold:#ffd77b;--line:#536080}*{box-sizing:border-box}body{margin:0;font-family:Trebuchet MS,Arial,sans-serif;color:var(--ink);background:radial-gradient(ellipse at 12% 5%,#3d245d 0,transparent 45%),radial-gradient(ellipse at 90% 90%,#123e52 0,transparent 42%),var(--bg);min-height:100vh}main{max-width:920px;margin:auto;padding:22px 16px 60px}.hero{text-align:center;padding:22px 10px 12px}.eyebrow{letter-spacing:.23em;text-transform:uppercase;color:var(--mint);font-size:.75rem;font-weight:800}h1{font-size:clamp(2.3rem,7vw,4.3rem);line-height:1.06;margin:10px 0;color:#fff;text-shadow:0 4px 0 #7b357f}h2{margin:0 0 10px;font-size:1.6rem}p{line-height:1.55;color:var(--muted)}.card{background:linear-gradient(155deg,#293154,#1c2340);border:1px solid #5a6085;border-radius:22px;padding:clamp(17px,4vw,30px);box-shadow:0 15px 50px #07091d80;margin:18px 0}.hidden{display:none!important}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field label{display:block;margin-bottom:7px;font-weight:700}.field input,.entry{width:100%;background:#10192f;border:2px solid #647195;border-radius:12px;color:white;padding:14px;font:inherit;font-size:1.05rem}.field input:focus,.entry:focus{outline:2px solid var(--mint)}button{cursor:pointer;border:0;border-radius:11px;padding:12px 18px;font-weight:800;font:inherit;transition:transform .12s,filter .12s}button:hover{filter:brightness(1.12)}button:active{transform:scale(.97)}.primary{background:linear-gradient(90deg,var(--pink),#ffb16f);color:#21152c;font-weight:900}.secondary{background:#384464;color:#fff;border:1px solid #7b87ac}.full{width:100%;margin-top:14px}.topline{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.pill{border:1px solid #7a83a5;border-radius:40px;padding:8px 13px;color:#fff;background:#323b60;font-size:.88rem}.progress{height:13px;border-radius:40px;background:#0e1730;overflow:hidden;margin:16px 0 5px;border:1px solid #647195}.progress>div{height:100%;background:linear-gradient(90deg,var(--mint),var(--gold));width:0%;transition:width .25s}.room-title{color:var(--gold);font-size:1.1rem;font-weight:800}.prompt{font-size:1.05rem;color:#e8e8fa}.math{font-family:Cambria,'Times New Roman',serif;font-size:clamp(1.8rem,5vw,2.7rem);text-align:center;min-height:76px;padding:18px 8px;margin:18px 0;background:#111a34;border:1px solid #4b5d86;border-radius:14px;overflow-wrap:anywhere}.math sup,.preview sup{font-size:.62em;vertical-align:super}.math .frac,.preview .frac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.15;font-size:.86em}.frac .num{border-bottom:2px solid currentColor;padding:0 5px 4px}.frac .den{padding:4px 5px 0}.preview{font-family:Cambria,'Times New Roman',serif;font-size:1.65rem;min-height:54px;padding:10px;background:#0e1932;border:1px solid #586c90;border-radius:12px;overflow-wrap:anywhere}.entry{margin-top:8px;font-size:1rem}.keys{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:7px;margin-top:13px}.keys button{padding:11px 2px;background:#39496c;border:1px solid #6b7ea0;color:white;font-size:1.05rem;font-weight:800}.keys button.special{background:#665083}.keys button.active{background:#cf6dba;color:#1b1531}.keys button.wide{grid-column:span 2}.feedback{min-height:26px;margin-top:12px;font-weight:800}.ok{color:var(--mint)}.bad{color:#ffb1b1}.note{font-size:.89rem;color:#c3c8e1}.choices{display:grid;gap:10px}.choice{background:#354363;color:white;text-align:left;border:2px solid #617296;padding:14px;font-weight:800}.choice.selected{border-color:var(--mint);background:#285e60}.code{font-family:monospace;font-size:2rem;letter-spacing:.25em;text-align:center;color:var(--gold);padding:15px;border:2px dashed var(--gold);border-radius:15px}.room-dots{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.dot{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#374365;border:1px solid #7280a3;font-size:.8rem}.dot.done{background:#28695f;border-color:var(--mint)}.footer{text-align:center;color:#b8bfd8;font-size:.8rem;margin-top:25px}@media(max-width:560px){.fields{grid-template-columns:1fr}.keys{grid-template-columns:repeat(6,minmax(0,1fr))}.keys button{min-height:42px}.card{border-radius:16px}.pill{font-size:.76rem}}
+</style></head><body><main><header class="hero"><div class="eyebrow">Algebra I • Mission 04</div><h1>🔐 THE EXPONENT<br>LOCKDOWN</h1><p>Five locked chambers. Twenty challenges. One way out.</p></header>
+<section id="start" class="card"><h2>🚨 Security Alert</h2><p>The Exponent Lab has gone into lockdown! Solve each challenge to unlock the next chamber. Collect four security codes, then enter them in order to escape. There is <strong>no timer</strong> — accuracy is your mission.</p><div class="fields"><div class="field"><label for="p1">Student name</label><input id="p1" maxlength="60" placeholder="First and last name"></div><div class="field"><label for="p2">Partner name (optional)</label><input id="p2" maxlength="60" placeholder="Leave blank if working alone"></div></div><p class="note">📝 Use scratch paper and show your work. Your teacher may ask to see it. Use the on-screen math keyboard to enter exponents.</p><button class="primary full" id="begin">START MISSION →</button></section>
+<section id="game" class="hidden"><div class="topline"><span class="pill" id="roompill"></span><span class="pill" id="countpill"></span></div><div class="progress"><div id="bar"></div></div><div class="room-dots" id="dots"></div><article class="card"><div class="room-title" id="roomtitle"></div><h2 id="qtitle"></h2><p class="prompt" id="instruction"></p><div class="math" id="problem"></div><div id="textmode"><label for="answer"><strong>Enter your simplified answer:</strong></label><div class="preview" id="preview">Your answer appears here</div><input class="entry" id="answer" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type here or use the math keyboard"><div class="keys" id="keyboard"></div><p class="note">Tap <strong>xⁿ</strong> to switch to exponent mode, then tap it again to return to the baseline. Tap <strong>xⁿ</strong> to start an exponent, then tap <strong>ABC</strong> to return to normal typing. Tap <strong>⁄</strong> for a stacked fraction. You can also type directly.</p></div><div id="choicemode" class="choices hidden"></div><div id="feedback" class="feedback" aria-live="polite"></div><button class="primary full" id="check">CHECK ANSWER 🔓</button></article></section>
+<section id="unlock" class="card hidden"><h2>🔓 Chamber Unlocked!</h2><p id="unlocktext"></p><div class="code" id="roomcode"></div><p class="note">Write down this code! You will need all four codes at the final exit.</p><button class="primary full" id="nextroom">ENTER NEXT CHAMBER →</button></section>
+<section id="final" class="card hidden"><h2>🚪 Final Exit Door</h2><p>All four chambers are unlocked. Enter the four codes <strong>in the order you earned them</strong> to escape. Enter digits only, with no spaces.</p><div class="field"><label for="finalcode">Master security code</label><input id="finalcode" inputmode="numeric" autocomplete="off" placeholder="16-digit master code" maxlength="16"></div><div class="feedback" id="finalfeedback" aria-live="polite"></div><button class="primary full" id="escape">UNLOCK FINAL EXIT 🔑</button></section>
+<section id="win" class="card hidden" style="text-align:center"><div style="font-size:4rem">🎉🏆🔓</div><h2 style="color:var(--mint);font-size:2.5rem">YOU ESCAPED!</h2><p id="winners" style="font-size:1.3rem;color:white"></p><p>You've mastered the Laws of Exponents and escaped the Exponent Lab!</p><div class="pill" id="finished"></div><p class="note">Show this completion screen to your teacher, along with your scratch work.</p><button class="secondary full" onclick="window.print()">PRINT COMPLETION SCREEN</button></section><div class="footer">The Exponent Lockdown • 20 challenges • No countdown timer</div></main>
+<script>
+const rooms=[{name:'THE POWER VAULT',theme:'Power to a Power',story:'The vault reacts only to correctly simplified powers.',code:'4826',qs:[
+{p:'(m<sup>6</sup>)<sup>4</sup>',a:'m24'}, {p:'(x<sup>2</sup>)<sup>9</sup>',a:'x18'}, {p:'(3d<sup>7</sup>x<sup>3</sup>)<sup>3</sup>',a:'27d21x9'}, {p:'(<span class="frac"><span class="num">x<sup>3</sup></span><span class="den">a<sup>5</sup></span></span>)<sup>4</sup>',a:'x12/a20'}]},
+{name:'THE MULTIPLICATION CHAMBER',theme:'Product of Powers',story:'Combine coefficients and like bases to restore the power supply.',code:'7319',qs:[
+{p:'2n<sup>4</sup>m<sup>3</sup> · 19n<sup>2</sup>m<sup>9</sup>',a:'38n6m12'},
+{p:'3n<sup>5</sup>z<sup>9</sup>(−5n<sup>3</sup>z<sup>6</sup>)',a:'-15n8z15'},
+{p:'(−3b<sup>−5</sup>k)(9b<sup>5</sup>k<sup>3</sup>)',a:'-27k4'},
+{p:'(−3k<sup>5</sup>w<sup>3</sup>)(−13k<sup>7</sup>w<sup>9</sup>)',a:'39k12w12'}]},
+{name:'THE CIRCUIT CORRIDOR',theme:'More Multiplication',story:'Repair the last four circuits by simplifying each expression.',code:'2654',qs:[
+{p:'(−5n<sup>7</sup>j<sup>6</sup>)(16n<sup>7</sup>j<sup>6</sup>)',a:'-80n14j12'},
+{p:'(−8w<sup>5</sup>d<sup>6</sup>)(11w<sup>4</sup>d<sup>3</sup>)',a:'-88w9d9'},
+{p:'(−7a<sup>9</sup>z<sup>8</sup>)(7a<sup>4</sup>z<sup>7</sup>)',a:'-49a13z15'},
+{p:'(−4a<sup>5</sup>y<sup>2</sup>k<sup>5</sup>)<sup>3</sup>',a:'-64a15y6k15'}]},
+{name:'THE FINAL EXPERIMENT',theme:'Power and Product',story:'The experiment is unstable. Simplify the final four expressions.',code:'9037',qs:[
+{p:'(6y<sup>2</sup>z<sup>9</sup>)<sup>2</sup>',a:'36y4z18'},
+{p:'−(5ac<sup>2</sup>)<sup>2</sup>',a:'-25a2c4'},
+{p:'(a<sup>8</sup>x<sup>7</sup>b<sup>3</sup>)<sup>2</sup>',a:'a16x14b6'},
+{p:'(−6n<sup>9</sup>yj)<sup>2</sup>',a:'36n18y2j2'}]},
+{name:'THE RULE DECODER',theme:'Explain the Rules',story:'The final security system tests what you know about exponent laws.',qs:[
+{p:'When using the product rule, what do you do with the exponents?',choices:['Add the exponents','Multiply the exponents','Subtract the exponents','Make the exponents zero'],correct:0},
+{p:'When using the Power of a Power rule, what do you do with the exponents?',choices:['Add the exponents','Multiply the exponents','Divide the exponents','Keep only the larger exponent'],correct:1},
+{p:'When using the quotient rule, what do you do with the exponents?',choices:['Multiply the exponents','Add the exponents','Subtract the exponents','Square the exponents'],correct:2},
+{p:'When the exponent is 0, what is the answer? (Assume the base is nonzero.)',choices:['0','The base','Undefined','1'],correct:3}]}];
+let room=0,question=0,selected=-1,expMode=false, names=[];const $=id=>document.getElementById(id);const show=id=>{for(const s of ['start','game','unlock','final','win'])$(s).classList.toggle('hidden',s!==id)};
+function superscriptHtml(str){
+ let s=str.trim().replace(/−/g,'-').replace(/\*\*/g,'^');
+ if(!s)return '<span style="color:#aab5d4;font:16px Arial">Your answer appears here</span>';
+ const esc=t=>t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+ const convert=t=>esc(t).replace(/\^\(?(-?\d+)\)?/g,'<sup>$1</sup>').replace(/\*/g,' · ');
+ let parts=s.split('/');
+ if(parts.length===2)return '<span class="frac"><span class="num">'+(convert(parts[0])||'□')+'</span><span class="den">'+(convert(parts[1])||'□')+'</span></span>';
+ return convert(s);
+}
+function parseTerm(str){str=str.toLowerCase().replace(/\s+/g,'').replace(/\u2212/g,'-').replace(/\*/g,'').replace(/\u00b7/g,'').replace(/[()]/g,'');if(!str)return null;let i=0,coef=1,vars={};if(str[0]==='-'){coef=-1;i++}else if(str[0]==='+')i++;let n=str.slice(i).match(/^\d+(?:\.\d+)?/);if(n){coef*=Number(n[0]);i+=n[0].length}let seen=false;while(i<str.length){let ch=str[i];if(!/[a-z]/.test(ch))return null;seen=true;i++;let pow=1;if(str[i]==='^'){i++;let match=str.slice(i).match(/^-?\d+/);if(!match)return null;pow=Number(match[0]);i+=match[0].length}else{let match=str.slice(i).match(/^\d+/);if(match){pow=Number(match[0]);i+=match[0].length}}vars[ch]=(vars[ch]||0)+pow}return {coef,vars,seen}}
+function parseExpression(s){s=s.toLowerCase().replace(/\s/g,'').replace(/\u2212/g,'-');let p=s.split('/');if(p.length>2)return null;let a=parseTerm(p[0]),b=p.length===2?parseTerm(p[1]):{coef:1,vars:{}};if(!a||!b||!b.coef)return null;let vars={...a.vars};for(let [v,e] of Object.entries(b.vars))vars[v]=(vars[v]||0)-e;for(let v in vars)if(vars[v]===0)delete vars[v];return {coef:a.coef/b.coef,vars}}
+function equivalent(s,expected){const a=parseExpression(s),b=parseExpression(expected);if(!a||!b)return false;if(Math.abs(a.coef-b.coef)>1e-9)return false;return Object.keys({...a.vars,...b.vars}).every(v=>(a.vars[v]||0)===(b.vars[v]||0))}
+function isSimplified(s){let t=s.replace(/\s/g,'').replace(/\u2212/g,'-');return !/\^0(?!\d)/.test(t)&&!/[a-z]\^?1(?!\d)/.test(t)&&!/[a-z]\^-/.test(t)&&!/[a-z]0(?!\d)/.test(t)}
+function buildKeyboard(){
+ const keys=['1','2','3','4','5','6','7','8','9','0','−','⁄','a','b','c','d','j','k','m','n','w','x','y','z','xⁿ','ABC','⌫','CLEAR'];
+ $('keyboard').innerHTML='';
+ keys.forEach(key=>{
+  let b=document.createElement('button');b.type='button';b.textContent=key;
+  if(['xⁿ','ABC','⌫','CLEAR','⁄'].includes(key))b.classList.add('special');
+  if(key==='CLEAR')b.classList.add('wide');
+  b.onclick=()=>{
+   const input=$('answer');
+   const insert=ch=>input.setRangeText(ch,input.selectionStart,input.selectionEnd,'end');
+   if(key==='xⁿ'){
+    // Insert a visible exponent marker at the caret immediately, every time.
+    const before=input.value.slice(0,input.selectionStart);
+    if(!before.endsWith('^'))insert('^');
+    expMode=true;refreshMode();
+   }else if(key==='ABC'){
+    expMode=false;refreshMode();
+   }else if(key==='CLEAR'){
+    input.value='';expMode=false;refreshMode();
+   }else if(key==='⌫'){
+    let pos=input.selectionStart,start=input.selectionEnd;
+    if(pos===start&&pos>0)pos--;
+    input.setRangeText('',pos,start,'end');
+   }else if(key==='⁄'){
+    insert('/');expMode=false;refreshMode();
+   }else{
+    let ch=key==='−'?'-':key;
+    // The exponent marker has already been inserted; numbers follow it.
+    // A variable always starts a new factor at the baseline.
+    if(/[a-z]/.test(ch)){expMode=false;refreshMode()}
+    insert(ch);
+   }
+   input.dispatchEvent(new Event('input'));input.focus();
+  };
+  $('keyboard').appendChild(b);
+ });
+}
+function refreshMode(){
+ [...$('keyboard').children].find(b=>b.textContent==='xⁿ')?.classList.toggle('active',expMode);
+}
+function render(){show('game');let r=rooms[room],q=r.qs[question],num=room*4+question+1;$('roompill').textContent=`CHAMBER ${room+1} / 5`;$('countpill').textContent=`QUESTION ${num} / 20`;$('bar').style.width=((num-1)/20*100)+'%';$('dots').innerHTML=r.qs.map((_,i)=>`<span class="dot ${i<question?'done':''}">${i<question?'✓':i+1}</span>`).join('');$('roomtitle').textContent='🔒 '+r.name;$('qtitle').textContent=`Challenge ${question+1} of 4`;$('instruction').textContent=r.story;$('feedback').textContent='';$('problem').innerHTML=q.p;$('answer').value='';$('preview').innerHTML=superscriptHtml('');expMode=false;refreshMode();selected=-1;let isChoice=!!q.choices;$('textmode').classList.toggle('hidden',isChoice);$('choicemode').classList.toggle('hidden',!isChoice);$('check').textContent=question===3?'CHECK & UNLOCK 🔓':'CHECK ANSWER 🔓';if(isChoice){$('choicemode').innerHTML='';q.choices.forEach((v,i)=>{let b=document.createElement('button');b.className='choice';b.textContent=String.fromCharCode(65+i)+'. '+v;b.onclick=()=>{selected=i;[...$('choicemode').children].forEach((e,j)=>e.classList.toggle('selected',j===i));$('feedback').textContent=''};$('choicemode').appendChild(b)})}}
+function correct(){question++;if(question<4){render();return}if(room<4){show('unlock');$('unlocktext').textContent=`You cleared ${rooms[room].name}! Your security code is:`;$('roomcode').textContent=rooms[room].code;$('nextroom').textContent=room===3?'ENTER THE RULE DECODER →':'ENTER NEXT CHAMBER →'}else{show('final')}}
+$('begin').onclick=()=>{let a=$('p1').value.trim(),b=$('p2').value.trim();if(!a){$('p1').focus();alert('Please enter a student name before starting.');return}names=[a,...(b?[b]:[])];room=0;question=0;render()};$('answer').addEventListener('input',()=>{$('preview').innerHTML=superscriptHtml($('answer').value);$('feedback').textContent=''});$('answer').addEventListener('keydown',e=>{if(e.key==='Enter'){$('check').click();e.preventDefault()}});$('check').onclick=()=>{let q=rooms[room].qs[question],valid=q.choices?selected===q.correct:equivalent($('answer').value,q.a)&&isSimplified($('answer').value);if(valid){$('feedback').className='feedback ok';$('feedback').textContent='✓ Correct! Security accepted.';setTimeout(correct,450)}else{$('feedback').className='feedback bad';$('feedback').textContent=q.choices?'🔒 Not quite. Review the rule and try again.':'🔒 Code rejected. Check coefficients, signs, and exponents. Try again.'}};$('nextroom').onclick=()=>{room++;question=0;render()};$('escape').onclick=()=>{let expected=rooms.slice(0,4).map(r=>r.code).join('');if($('finalcode').value.replace(/\s/g,'')===expected){show('win');$('winners').textContent=names.join(' & ');$('finished').textContent='20 of 20 challenges completed • '+new Date().toLocaleString();$('bar').style.width='100%'}else{$('finalfeedback').className='feedback bad';$('finalfeedback').textContent='🔒 Master code incorrect. Check the four codes in order.'}};buildKeyboard();
+</script></body></html>
